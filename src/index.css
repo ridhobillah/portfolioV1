@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500;1,600&display=swap');
+
+
+*{
+  font-family: 'Alata', sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+     background-color: rgb(255, 255, 255);
+}
+
+.text-diubah{
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  min-width: max-content;
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.333%);
+  }
+}
+
+.light-pillar-fallback {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #888;
+  font-size: 14px;
+}
+
+.light-pillar-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
