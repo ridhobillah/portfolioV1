@@ -3,6 +3,7 @@ import profile from "./assets/profile.png";
 import absensi from "./assets/absensiproject.png";
 import fakestore from "./assets/fakestoreproject.png";
 import kamus from "./assets/kamusproject.png";
+import wallpaper from "./assets/wallpaper.gif";
 import gympro from "./assets/gymproproject.png";
 import chaos from "./assets/chaosproject.png";
 import figmachaos from "./assets/figmachaos.png";
@@ -14,7 +15,7 @@ import { FaCode } from "react-icons/fa";
 import { SiLaravel, SiBootstrap, SiMysql } from "react-icons/si";
 import { FaAward, FaTimes } from "react-icons/fa";
 import { RiReactjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { FaFlutter, FaDartLang  } from "react-icons/fa6";
+import { FaFlutter, FaDartLang } from "react-icons/fa6";
 
 import certi1 from "./assets/AI.png";
 import certi2 from "./assets/JS.png";
@@ -72,55 +73,48 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#0d0d0d] text-white font-sans">
-      <section className="relative flex min-h-[600px] h-screen w-full items-center md:justify-center overflow-hidden bg-black text-white">
+      <section className="relative h-screen w-full overflow-hidden bg-black text-white flex items-center md:justify-center">
         <div className="absolute inset-0">
-          <LightPillar
-            topColor="#2efe54"
-            bottomColor="#0a5a2a"
-            intensity={1}
-            rotationSpeed={0.3}
-            glowAmount={0.002}
-            pillarWidth={3}
-            pillarHeight={0.4}
-            noiseIntensity={0.5}
-            pillarRotation={25}
-            mixBlendMode="screen"
-            quality="high"
-          />
-          <div className="absolute inset-0 bg-black/20" />
+          <img src={wallpaper} alt="" className="w-full h-full object-cover" />
+
+          <div className="absolute inset-0 bg-black/55" />
+
+          <div className="absolute inset-0 bg-green-900/35" />
         </div>
 
         <div
           data-aos="zoom-in"
-          className="container relative z-10 mx-auto px-6 text-left md:text-center"
+          className="relative z-10 px-6 text-left md:text-center"
         >
-          <div className="inline-flex items-center gap-2 bg-green-950/40 border border-green-900 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest text-white mb-3">
+          <div className="inline-flex items-center gap-2 bg-green-950/40 border border-green-900 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest mb-3">
             <span className="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></span>
             Welcome to my portfolio
           </div>
 
-          <h1 className="text-diubah mx-0 md:mx-auto max-w-5xl text-5xl sm:text-5xl font-extrabold md:text-6xl leading-[1.1] tracking-tight">
-            Hello I'm Muhammad <br />{" "}
-            <span className="text-diubah italic font-extralight text-white">
+          <h1 className="text-diubah max-w-5xl text-5xl sm:text-5xl md:text-6xl font-extrabold leading-[1.1] tracking-tight">
+            Hello I'm Muhammad <br />
+            <span className="text-diubah italic font-extralight">
               Ridho Billah
             </span>
           </h1>
 
-          <div className="mt-10 flex flex-col items-center justify-start md:justify-center gap-4 sm:flex-row [&>button]:w-full [&>button]:sm:w-auto [&>button]:px-8 [&>button]:py-3 [&>button]:rounded-lg [&>button]:transition-all">
+          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row md:justify-center">
             <a
               href="#project"
-              className="inline-flex items-center justify-center border text-gray-950 hover:text-white border-white bg-white px-8 py-3 font-medium backdrop-blur-sm transition-all hover:bg-white/20 rounded-lg w-full sm:w-auto"
+              className="w-full sm:w-auto inline-flex justify-center border border-white bg-white text-black px-8 py-3 rounded-lg font-medium transition hover:bg-white/20 hover:text-white"
             >
               Project
             </a>
+
             <a
               href="#aboutme"
-              className="inline-flex items-center justify-center border border-white/10 bg-white/10 px-8 py-3 font-medium backdrop-blur-sm transition-all hover:bg-white/20 rounded-lg w-full sm:w-auto"
+              className="w-full sm:w-auto inline-flex justify-center border border-white/15 bg-white/15 px-8 py-3 rounded-lg font-medium transition hover:bg-white/20"
             >
               About me
             </a>
           </div>
         </div>
+
         <div className="absolute bottom-0 h-32 w-full bg-gradient-to-t from-black to-transparent" />
       </section>
 
@@ -153,17 +147,17 @@ export default function App() {
               About me
             </div>
 
-            <h1 className="text-diubah italic text-6xl sm:text-7xl md:text-8xl lg:text-[110px] font-extrabold leading-none mt-8 text-green-500">
+            <h1 className="text-diubah italic text-6xl sm:text-7xl md:text-8xl lg:text-[110px] font-extrabold leading-none mt-4 text-green-500">
               Sidowwws
             </h1>
 
-            <p className="text-gray-400 text-base sm:text-lg md:text-xl max-w-2xl mt-8 mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-gray-400 text-base sm:text-lg md:text-xl max-w-2xl mt-7 mx-auto lg:mx-0 leading-relaxed">
               Hello, I'm a design enthusiast and a user-friendly website
               builder. I'm a team player, disciplined, and constantly striving
               to develop my programming and website design skills.
             </p>
 
-            <div className="flex flex-nowrap justify-start lg:justify-start gap-5 sm:gap-6 mt-10 w-full">
+            <div className="flex flex-nowrap justify-start lg:justify-start gap-5 sm:gap-6 mt-9 w-full">
               <a
                 href="https://wa.me/628989209979"
                 target="_blank"
@@ -191,48 +185,48 @@ export default function App() {
           </div>
 
           {/* RIGHT */}
-          <div
-            data-aos="zoom-in"
-            data-aos-duration="1200"
-            className="lg:col-span-5 flex justify-center lg:justify-end order-1 lg:order-2"
-          >
-            <div
-              className="relative group border-4 border-green-500 overflow-hidden rounded-3xl
-w-full max-w-[350px] sm:max-w-[420px] md:max-w-[500px]
-aspect-[4/3]
-bg-green-900/70 p-5 sm:p-8 flex flex-col justify-between
--rotate-6 hover:rotate-0 transition duration-500"
-            >
-              <div className="text-gray-50 z-10">
-                <span className="font-bold text-5xl sm:text-6xl md:text-7xl">
-                  Rd
-                </span>
-                <p className="text-sm sm:text-base md:text-lg opacity-80 mt-2">
-                  Fullstack Developer
-                </p>
-              </div>
+         <div
+  data-aos="zoom-in"
+  data-aos-duration="1200"
+  className="lg:col-span-5 flex justify-center lg:justify-end order-1 lg:order-2 px-4 overflow-visible"
+>
+  <div
+    className="relative group border-4 border-green-500 rounded-3xl overflow-hidden
+    w-full max-w-[310px] sm:max-w-[380px] md:max-w-[460px]
+    aspect-[4/3]
+    bg-green-900/70 p-5 sm:p-7 md:p-8 flex flex-col justify-between
+    -rotate-6 hover:rotate-0 transition duration-500"
+  >
+    <div className="text-gray-50 z-10">
+      <span className="font-bold text-5xl sm:text-6xl md:text-7xl">
+        Rd
+      </span>
+      <p className="text-sm sm:text-base md:text-lg opacity-80 mt-2">
+        Fullstack Developer
+      </p>
+    </div>
 
-              <a
-                href="#contact"
-                className="z-10 w-fit text-sm sm:text-base md:text-lg duration-300 hover:bg-green-500 border hover:text-gray-50 bg-gray-50 font-semibold text-green-900 px-5 py-3 flex items-center gap-2 rounded-lg"
-              >
-                Hire me
-              </a>
+    <a
+      href="#contact"
+      className="relative z-20 w-fit text-sm sm:text-base duration-300 hover:bg-green-500 border hover:text-gray-50 bg-gray-50 font-semibold text-green-900 px-5 py-3 flex items-center gap-2 rounded-lg"
+    >
+      Hire me
+    </a>
 
-              <div className="absolute -bottom-10 -right-16 opacity-90 overflow-hidden">
-                <svg
-                  className="w-72 sm:w-80 md:w-96 translate-x-10 translate-y-8 group-hover:scale-110 transition duration-500 fill-gray-50 stroke-green-200"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 64 64"
-                >
-                  <path
-                    d="M50.4 51C40.5 49.1 40 46 40 44v-1.2a18.9 18.9 0 0 0 5.7-8.8h.1c3 0 3.8-6.3 3.8-7.3s.1-4.7-3-4.7C53 4 30 0 22.3 6c-5.4 0-5.9 8-3.9 16c-3.1 0-3 3.8-3 4.7s.7 7.3 3.8 7.3c1 3.6 2.3 6.9 4.7 9v1.2c0 2 .5 5-9.5 6.8S2 62 2 62h60a14.6 14.6 0 0 0-11.6-11z"
-                    strokeWidth="4"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
+    <div className="absolute -bottom-10 -right-12 sm:-bottom-10 sm:-right-16 opacity-90 pointer-events-none">
+      <svg
+        className="w-56 sm:w-72 md:w-96 translate-x-8 translate-y-8 group-hover:scale-110 transition duration-500 fill-gray-50 stroke-green-200"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 64 64"
+      >
+        <path
+          d="M50.4 51C40.5 49.1 40 46 40 44v-1.2a18.9 18.9 0 0 0 5.7-8.8h.1c3 0 3.8-6.3 3.8-7.3s.1-4.7-3-4.7C53 4 30 0 22.3 6c-5.4 0-5.9 8-3.9 16c-3.1 0-3 3.8-3 4.7s.7 7.3 3.8 7.3c1 3.6 2.3 6.9 4.7 9v1.2c0 2 .5 5-9.5 6.8S2 62 2 62h60a14.6 14.6 0 0 0-11.6-11z"
+          strokeWidth="4"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
         </section>
       </div>
       <div
@@ -270,14 +264,22 @@ bg-green-900/70 p-5 sm:p-8 flex flex-col justify-between
               </div>
 
               <div className="flex gap-4 mt-4 px-4">
-                <button className="rounded-full p-2" style={{background:"#61DBFB"}}><RiReactjsFill size={18} color="white"/></button>
-                <button className="rounded-full bg-blue-400 p-2"><RiTailwindCssFill size={18} color="white"/></button>
+                <button
+                  className="rounded-full p-2"
+                  style={{ background: "#61DBFB" }}
+                >
+                  <RiReactjsFill size={18} color="white" />
+                </button>
+                <button className="rounded-full bg-blue-400 p-2">
+                  <RiTailwindCssFill size={18} color="white" />
+                </button>
               </div>
 
               <div className="mt-4 p-4 border-t border-gray-700">
                 <div className="flex justify-between items-center">
                   <a
-                    href="https://github.com/ridhobillah/Kamusproject.git" target="_blank"
+                    href="https://github.com/ridhobillah/Kamusproject.git"
+                    target="_blank"
                     className="bg-green-900 hover:bg-green-800 px-4 py-2 rounded-md flex items-center gap-2 text-white"
                   >
                     <FaGithub />
@@ -312,15 +314,22 @@ bg-green-900/70 p-5 sm:p-8 flex flex-col justify-between
               </div>
 
               <div className="flex gap-4 mt-4 px-4">
-                <button className="bg-red-500 p-2 rounded-full"><SiLaravel size={18} color="white"/></button>
-                <button className="bg-purple-500 p-2 rounded-full"><SiBootstrap size={18} color="white"/></button>
-                <button className="bg-blue-500 p-2 rounded-full"><SiMysql size={18} color="white"/></button>
+                <button className="bg-red-500 p-2 rounded-full">
+                  <SiLaravel size={18} color="white" />
+                </button>
+                <button className="bg-purple-500 p-2 rounded-full">
+                  <SiBootstrap size={18} color="white" />
+                </button>
+                <button className="bg-blue-500 p-2 rounded-full">
+                  <SiMysql size={18} color="white" />
+                </button>
               </div>
 
               <div className="mt-4 p-4 border-t border-gray-700">
                 <div className="flex justify-between items-center">
                   <a
-                    href="https://github.com/ridhobillah/Projectmandirilaravel.git" target="_blank"
+                    href="https://github.com/ridhobillah/Projectmandirilaravel.git"
+                    target="_blank"
                     className="bg-green-900 hover:bg-green-800 px-4 py-2 rounded-md flex items-center gap-2 text-white"
                   >
                     <FaGithub />
@@ -355,14 +364,22 @@ bg-green-900/70 p-5 sm:p-8 flex flex-col justify-between
               </div>
 
               <div className="flex gap-4 mt-4 px-4">
-                <button className="rounded-full p-2" style={{background:"#61DBFB"}}><RiReactjsFill size={18} color="white"/></button>
-                <button className="rounded-full bg-blue-400 p-2"><RiTailwindCssFill size={18} color="white"/></button>
+                <button
+                  className="rounded-full p-2"
+                  style={{ background: "#61DBFB" }}
+                >
+                  <RiReactjsFill size={18} color="white" />
+                </button>
+                <button className="rounded-full bg-blue-400 p-2">
+                  <RiTailwindCssFill size={18} color="white" />
+                </button>
               </div>
 
               <div className="mt-4 p-4 border-t border-gray-700">
                 <div className="flex justify-between items-center">
                   <a
-                    href="https://github.com/ridhobillah/Fakestore.git" target="_blank"
+                    href="https://github.com/ridhobillah/Fakestore.git"
+                    target="_blank"
                     className="bg-green-900 hover:bg-green-800 px-4 py-2 rounded-md flex items-center gap-2 text-white"
                   >
                     <FaGithub />
@@ -397,13 +414,16 @@ bg-green-900/70 p-5 sm:p-8 flex flex-col justify-between
               </div>
 
               <div className="flex gap-4 mt-4 px-4">
-                <button className="rounded-full p-2 bg-white"><FaFigma size={18} color="black"/></button>
+                <button className="rounded-full p-2 bg-white">
+                  <FaFigma size={18} color="black" />
+                </button>
               </div>
 
               <div className="mt-4 p-4 border-t border-gray-700">
                 <div className="flex justify-between items-center">
                   <a
-                    href="https://www.figma.com/design/ugzXwlfJRPpqWGHKsy4P8w/UI-UX-chaos?node-id=0-1&t=Fcj47hMOoVtZQeCt-1" target="_blank"
+                    href="https://www.figma.com/design/ugzXwlfJRPpqWGHKsy4P8w/UI-UX-chaos?node-id=0-1&t=Fcj47hMOoVtZQeCt-1"
+                    target="_blank"
                     className="bg-green-900 hover:bg-green-800 px-4 py-2 rounded-md flex items-center gap-2 text-white"
                   >
                     <FaFigma />
@@ -438,14 +458,19 @@ bg-green-900/70 p-5 sm:p-8 flex flex-col justify-between
               </div>
 
               <div className="flex gap-4 mt-4 px-4">
-                <button className="rounded-full bg-blue-600 p-2"><FaFlutter size={18}/></button>
-                <button className="rounded-full bg-blue-500 p-2"><FaDartLang size={18}/></button>
+                <button className="rounded-full bg-blue-600 p-2">
+                  <FaFlutter size={18} />
+                </button>
+                <button className="rounded-full bg-blue-500 p-2">
+                  <FaDartLang size={18} />
+                </button>
               </div>
 
               <div className="mt-4 p-4 border-t border-gray-700">
                 <div className="flex justify-between items-center">
                   <a
-                    href="https://github.com/ridhobillah/Flutter-chaos.git" target="_blank"
+                    href="https://github.com/ridhobillah/Flutter-chaos.git"
+                    target="_blank"
                     className="bg-green-900 hover:bg-green-800 px-4 py-2 rounded-md flex items-center gap-2 text-white"
                   >
                     <FaGithub />
@@ -480,14 +505,19 @@ bg-green-900/70 p-5 sm:p-8 flex flex-col justify-between
               </div>
 
               <div className="flex gap-4 mt-4 px-4">
-               <button className="rounded-full bg-blue-600 p-2"><FaFlutter size={18}/></button>
-                <button className="rounded-full bg-blue-500 p-2"><FaDartLang size={18}/></button>
+                <button className="rounded-full bg-blue-600 p-2">
+                  <FaFlutter size={18} />
+                </button>
+                <button className="rounded-full bg-blue-500 p-2">
+                  <FaDartLang size={18} />
+                </button>
               </div>
 
               <div className="mt-4 p-4 border-t border-gray-700">
                 <div className="flex justify-between items-center">
                   <a
-                    href="https://github.com/ridhobillah/Flutter-gympro.git" target="_blank"
+                    href="https://github.com/ridhobillah/Flutter-gympro.git"
+                    target="_blank"
                     className="bg-green-900 hover:bg-green-800 px-4 py-2 rounded-md flex items-center gap-2 text-white"
                   >
                     <FaGithub />
@@ -597,7 +627,7 @@ bg-green-900/70 p-5 sm:p-8 flex flex-col justify-between
   }
       `}</style>
 
-      <FooterAI/>
+      <FooterAI />
     </div>
   );
 }
