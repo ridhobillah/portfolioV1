@@ -4,6 +4,8 @@ import absensi from "./assets/absensiproject.png";
 import fakestore from "./assets/fakestoreproject.png";
 import kamus from "./assets/kamusproject.png";
 import wallpaper from "./assets/wallpaper.gif";
+import cv from "./assets/sidowwwscv.png";
+import rental from "./assets/rental.png";
 import gympro from "./assets/gymproproject.png";
 import chaos from "./assets/chaosproject.png";
 import figmachaos from "./assets/figmachaos.png";
@@ -16,6 +18,7 @@ import { SiLaravel, SiBootstrap, SiMysql } from "react-icons/si";
 import { FaAward, FaTimes } from "react-icons/fa";
 import { RiReactjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { FaFlutter, FaDartLang } from "react-icons/fa6";
+import { SiExpress } from "react-icons/si";
 
 import certi1 from "./assets/AI.png";
 import certi2 from "./assets/JS.png";
@@ -136,7 +139,6 @@ export default function App() {
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36"
       >
         <section className="grid lg:grid-cols-12 gap-14 lg:gap-20 items-center p-3">
-          {/* LEFT */}
           <div
             data-aos="fade-up"
             data-aos-duration="1200"
@@ -184,7 +186,6 @@ export default function App() {
             </div>
           </div>
 
-          {/* RIGHT */}
          <div
   data-aos="zoom-in"
   data-aos-duration="1200"
@@ -207,10 +208,10 @@ export default function App() {
     </div>
 
     <a
-      href="#contact"
+      href={cv}
       className="relative z-20 w-fit text-sm sm:text-base duration-300 hover:bg-green-500 border hover:text-gray-50 bg-gray-50 font-semibold text-green-900 px-5 py-3 flex items-center gap-2 rounded-lg"
     >
-      Hire me
+      View CV
     </a>
 
     <div className="absolute -bottom-10 -right-12 sm:-bottom-10 sm:-right-16 opacity-90 pointer-events-none">
@@ -396,50 +397,7 @@ export default function App() {
               </div>
             </article>
 
-            <article
-              data-aos="zoom-in-up"
-              className="w-full rounded-lg shadow-lg overflow-hidden border border-green-500/50 bg-black"
-            >
-              <img
-                className="object-cover h-52 sm:h-56 md:h-60 w-full"
-                src={figmachaos}
-                alt="project"
-              />
-
-              <div className="flex flex-col gap-1 mt-4 px-4">
-                <h2 className="italic text-lg font-semibold text-white">
-                  Figma chaos
-                </h2>
-                <span className="text-gray-400">Design</span>
-              </div>
-
-              <div className="flex gap-4 mt-4 px-4">
-                <button className="rounded-full p-2 bg-white">
-                  <FaFigma size={18} color="black" />
-                </button>
-              </div>
-
-              <div className="mt-4 p-4 border-t border-gray-700">
-                <div className="flex justify-between items-center">
-                  <a
-                    href="https://www.figma.com/design/ugzXwlfJRPpqWGHKsy4P8w/UI-UX-chaos?node-id=0-1&t=Fcj47hMOoVtZQeCt-1"
-                    target="_blank"
-                    className="bg-green-900 hover:bg-green-800 px-4 py-2 rounded-md flex items-center gap-2 text-white"
-                  >
-                    <FaFigma />
-                    Figma
-                  </a>
-
-                  <h1
-                    className="text-transparent text-4xl sm:text-5xl font-bold"
-                    style={{ WebkitTextStroke: "1px #22c55e" }}
-                  >
-                    04
-                  </h1>
-                </div>
-              </div>
-            </article>
-
+           
             <article
               data-aos="zoom-in-up"
               className="w-full rounded-lg shadow-lg overflow-hidden border border-green-500/50 bg-black"
@@ -481,13 +439,14 @@ export default function App() {
                     className="text-transparent text-4xl sm:text-5xl font-bold"
                     style={{ WebkitTextStroke: "1px #22c55e" }}
                   >
-                    05
+                    04
                   </h1>
                 </div>
               </div>
             </article>
 
-            <article
+     
+             <article
               data-aos="zoom-in-up"
               className="w-full rounded-lg shadow-lg overflow-hidden border border-green-500/50 bg-black"
             >
@@ -523,6 +482,63 @@ export default function App() {
                     <FaGithub />
                     Github
                   </a>
+
+                  <h1
+                    className="text-transparent text-4xl sm:text-5xl font-bold"
+                    style={{ WebkitTextStroke: "1px #22c55e" }}
+                  >
+                    05
+                  </h1>
+                </div>
+              </div>
+            </article>
+
+                   <article
+              data-aos="zoom-in-up"
+              className="w-full rounded-lg shadow-lg overflow-hidden border border-green-500/50 bg-black"
+            >
+              <img
+                className="object-cover h-52 sm:h-56 md:h-60 w-full"
+                src={rental}
+                alt="project"
+              />
+
+              <div className="flex flex-col gap-1 mt-4 px-4">
+                <h2 className="italic text-lg font-semibold text-white">
+                  RentCycle (rental motor)
+                </h2>
+                <span className="text-gray-400">Website</span>
+              </div>
+
+              <div className="flex gap-4 mt-4 px-4">
+                <button className="rounded-full bg-green-600 p-2">
+                  <SiExpress size={18} />
+                </button>
+                <button className="rounded-full p-2" style={{ background: "#61DBFB" }}>
+                  <RiReactjsFill size={18} />
+                </button>
+              </div>
+
+              <div className="mt-4 p-4 border-t border-gray-700">
+                <div className="flex justify-between items-center">
+                 <div className="flex gap-1 items-center">
+                   <a
+                    href="https://github.com/ridhobillah/Backendujikelayakan"
+                    target="_blank"
+                    className="bg-green-900 hover:bg-green-800 px-4 py-2 rounded-md flex items-center gap-2 text-white"
+                  >
+                    <FaGithub />
+                    Backend
+                  </a>
+                    <a
+                    href="https://github.com/ridhobillah/Frontendujikel"
+                    target="_blank"
+                    className="bg-green-900 hover:bg-green-800 px-4 py-2 rounded-md flex items-center gap-2 text-white"
+                  >
+                    <FaGithub />
+                    Frontend
+                  </a>
+                 </div>
 
                   <h1
                     className="text-transparent text-4xl sm:text-5xl font-bold"
