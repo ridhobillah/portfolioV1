@@ -575,7 +575,7 @@ export default function App() {
         )}
       </section>
 
-      <footer class="bg-green-900 rounded-t-full">
+      <footer class="bg-green-900/70 rounded-t-4xl" data-aos="fade-up">
         <div class="mx-auto max-w-7xl py-8 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
           <div class="mt-8 md:mb-8 flex justify-center space-x-6 md:order-3  ">
             <a
