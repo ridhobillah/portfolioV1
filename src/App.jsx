@@ -11,7 +11,6 @@ import chaos from "./assets/chaosproject.png";
 import figmachaos from "./assets/figmachaos.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import LightPillar from "./LightPillar";
 import { FaWhatsapp, FaInstagram, FaGithub, FaFigma } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { SiLaravel, SiBootstrap, SiMysql } from "react-icons/si";
@@ -24,7 +23,6 @@ import certi1 from "./assets/AI.png";
 import certi2 from "./assets/JS.png";
 import certi3 from "./assets/K3.png";
 import certi4 from "./assets/WEB.png";
-import FooterAI from "./FooterAI";
 
 export default function App() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -78,11 +76,8 @@ export default function App() {
     <div className="min-h-screen bg-[#0d0d0d] text-white font-sans">
       <section className="relative h-screen w-full overflow-hidden bg-black text-white flex items-center md:justify-center">
         <div className="absolute inset-0">
-          <img src={wallpaper} alt="" className="w-full h-full object-cover" />
-
-          <div className="absolute inset-0 bg-black/55" />
-
-          <div className="absolute inset-0 bg-green-900/35" />
+          <img src={wallpaper} className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-black/55 bg-gradient-to-b from-transparent to-green-900/35" />
         </div>
 
         <div
@@ -90,25 +85,22 @@ export default function App() {
           className="relative z-10 px-6 text-left md:text-center"
         >
           <div className="inline-flex items-center gap-2 bg-green-950/40 border border-green-900 px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-widest mb-3">
-            <span className="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></span>
+            <span className="w-1.5 h-1.5 bg-white rounded-full animate-pulse" />
             Welcome to my portfolio
           </div>
-
-          <h1 className="text-diubah max-w-5xl text-5xl sm:text-5xl md:text-6xl font-extrabold leading-[1.1] tracking-tight">
+          <h1 className="text-diubah max-w-5xl text-5xl md:text-6xl font-extrabold leading-[1.1] tracking-tight">
             Hello I'm Muhammad <br />
             <span className="text-diubah italic font-extralight">
               Ridho Billah
             </span>
           </h1>
-
-          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row md:justify-center">
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="#project"
-              className="w-full sm:w-auto inline-flex justify-center border border-white bg-white text-black px-8 py-3 rounded-lg font-medium transition hover:bg-white/20 hover:text-white"
+              className="w-full sm:w-auto inline-flex justify-center border border-white bg-white text-black px-8 py-3 rounded-lg font-medium transition hover:bg-transparent hover:text-white"
             >
               Project
             </a>
-
             <a
               href="#aboutme"
               className="w-full sm:w-auto inline-flex justify-center border border-white/15 bg-white/15 px-8 py-3 rounded-lg font-medium transition hover:bg-white/20"
@@ -117,7 +109,6 @@ export default function App() {
             </a>
           </div>
         </div>
-
         <div className="absolute bottom-0 h-32 w-full bg-gradient-to-t from-black to-transparent" />
       </section>
 
@@ -186,61 +177,60 @@ export default function App() {
             </div>
           </div>
 
-         <div
-  data-aos="zoom-in"
-  data-aos-duration="1200"
-  className="lg:col-span-5 flex justify-center lg:justify-end order-1 lg:order-2 px-4 overflow-visible"
->
-  <div
-    className="relative group border-4 border-green-500 rounded-3xl overflow-hidden
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1200"
+            className="lg:col-span-5 flex justify-center lg:justify-end order-1 lg:order-2 px-4 overflow-visible"
+          >
+            <div
+              className="relative group border-4 border-green-500 rounded-3xl overflow-hidden
     w-full max-w-[310px] sm:max-w-[380px] md:max-w-[460px]
     aspect-[4/3]
     bg-green-900/70 p-5 sm:p-7 md:p-8 flex flex-col justify-between
     -rotate-6 hover:rotate-0 transition duration-500"
-  >
-    <div className="text-gray-50 z-10">
-      <span className="font-bold text-5xl sm:text-6xl md:text-7xl">
-        Rd
-      </span>
-      <p className="text-sm sm:text-base md:text-lg opacity-80 mt-2">
-        Fullstack Developer
-      </p>
-    </div>
+            >
+              <div className="text-gray-50 z-10">
+                <span className="font-bold text-5xl sm:text-6xl md:text-7xl">
+                  Rd
+                </span>
+                <p className="text-sm sm:text-base md:text-lg opacity-80 mt-2">
+                  Fullstack Developer
+                </p>
+              </div>
 
-    <a
-      href={cv}
-      className="relative z-20 w-fit text-sm sm:text-base duration-300 hover:bg-green-500 border hover:text-gray-50 bg-gray-50 font-semibold text-green-900 px-5 py-3 flex items-center gap-2 rounded-lg"
-    >
-      View CV
-    </a>
+              <a
+                href={cv}
+                className="relative z-20 w-fit text-sm sm:text-base duration-300 hover:bg-green-500 border hover:text-gray-50 bg-gray-50 font-semibold text-green-900 px-5 py-3 flex items-center gap-2 rounded-lg"
+              >
+                View CV
+              </a>
 
-    <div className="absolute -bottom-10 -right-12 sm:-bottom-10 sm:-right-16 opacity-90 pointer-events-none">
-      <svg
-        className="w-56 sm:w-72 md:w-96 translate-x-8 translate-y-8 group-hover:scale-110 transition duration-500 fill-gray-50 stroke-green-200"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 64 64"
-      >
-        <path
-          d="M50.4 51C40.5 49.1 40 46 40 44v-1.2a18.9 18.9 0 0 0 5.7-8.8h.1c3 0 3.8-6.3 3.8-7.3s.1-4.7-3-4.7C53 4 30 0 22.3 6c-5.4 0-5.9 8-3.9 16c-3.1 0-3 3.8-3 4.7s.7 7.3 3.8 7.3c1 3.6 2.3 6.9 4.7 9v1.2c0 2 .5 5-9.5 6.8S2 62 2 62h60a14.6 14.6 0 0 0-11.6-11z"
-          strokeWidth="4"
-        />
-      </svg>
-    </div>
-  </div>
-</div>
+              <div className="absolute -bottom-10 -right-12 sm:-bottom-10 sm:-right-16 opacity-90 pointer-events-none">
+                <svg
+                  className="w-56 sm:w-72 md:w-96 translate-x-8 translate-y-8 group-hover:scale-110 transition duration-500 fill-gray-50 stroke-green-200"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 64 64"
+                >
+                  <path
+                    d="M50.4 51C40.5 49.1 40 46 40 44v-1.2a18.9 18.9 0 0 0 5.7-8.8h.1c3 0 3.8-6.3 3.8-7.3s.1-4.7-3-4.7C53 4 30 0 22.3 6c-5.4 0-5.9 8-3.9 16c-3.1 0-3 3.8-3 4.7s.7 7.3 3.8 7.3c1 3.6 2.3 6.9 4.7 9v1.2c0 2 .5 5-9.5 6.8S2 62 2 62h60a14.6 14.6 0 0 0-11.6-11z"
+                    strokeWidth="4"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
+
       <div
         id="project"
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-24"
       >
         <section className="space-y-10 mt-5 p-1">
           <div data-aos="fade-up">
-            <h1 className="text-diubah italic flex items-center gap-3 text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-none mb-4 text-white">
-              Project
-              <FaCode />
+            <h1 className="text-diubah italic flex items-center gap-3 text-5xl sm:text-6xl font-extrabold leading-none mb-4 text-white">
+              Project <FaCode />
             </h1>
-
             <p className="text-gray-400 text-base sm:text-lg md:text-xl max-w-2xl">
               some projects that I worked on
             </p>
@@ -256,14 +246,12 @@ export default function App() {
                 src={kamus}
                 alt="project"
               />
-
               <div className="flex flex-col gap-1 mt-4 px-4">
                 <h2 className="italic text-lg font-semibold text-white">
                   Kamus inggris
                 </h2>
                 <span className="text-gray-400">Website</span>
               </div>
-
               <div className="flex gap-4 mt-4 px-4">
                 <button
                   className="rounded-full p-2"
@@ -275,7 +263,6 @@ export default function App() {
                   <RiTailwindCssFill size={18} color="white" />
                 </button>
               </div>
-
               <div className="mt-4 p-4 border-t border-gray-700">
                 <div className="flex justify-between items-center">
                   <a
@@ -283,10 +270,8 @@ export default function App() {
                     target="_blank"
                     className="bg-green-900 hover:bg-green-800 px-4 py-2 rounded-md flex items-center gap-2 text-white"
                   >
-                    <FaGithub />
-                    Github
+                    <FaGithub /> Github
                   </a>
-
                   <h1
                     className="text-transparent text-4xl sm:text-5xl font-bold"
                     style={{ WebkitTextStroke: "1px #22c55e" }}
@@ -306,14 +291,12 @@ export default function App() {
                 src={absensi}
                 alt="project"
               />
-
               <div className="flex flex-col gap-1 mt-4 px-4">
                 <h2 className="italic text-lg font-semibold text-white">
                   Absensi pegawai
                 </h2>
                 <span className="text-gray-400">Website</span>
               </div>
-
               <div className="flex gap-4 mt-4 px-4">
                 <button className="bg-red-500 p-2 rounded-full">
                   <SiLaravel size={18} color="white" />
@@ -325,7 +308,6 @@ export default function App() {
                   <SiMysql size={18} color="white" />
                 </button>
               </div>
-
               <div className="mt-4 p-4 border-t border-gray-700">
                 <div className="flex justify-between items-center">
                   <a
@@ -333,10 +315,8 @@ export default function App() {
                     target="_blank"
                     className="bg-green-900 hover:bg-green-800 px-4 py-2 rounded-md flex items-center gap-2 text-white"
                   >
-                    <FaGithub />
-                    Github
+                    <FaGithub /> Github
                   </a>
-
                   <h1
                     className="text-transparent text-4xl sm:text-5xl font-bold"
                     style={{ WebkitTextStroke: "1px #22c55e" }}
@@ -356,14 +336,12 @@ export default function App() {
                 src={fakestore}
                 alt="project"
               />
-
               <div className="flex flex-col gap-1 mt-4 px-4">
                 <h2 className="italic text-lg font-semibold text-white">
                   Fake store app
                 </h2>
                 <span className="text-gray-400">Website</span>
               </div>
-
               <div className="flex gap-4 mt-4 px-4">
                 <button
                   className="rounded-full p-2"
@@ -375,7 +353,6 @@ export default function App() {
                   <RiTailwindCssFill size={18} color="white" />
                 </button>
               </div>
-
               <div className="mt-4 p-4 border-t border-gray-700">
                 <div className="flex justify-between items-center">
                   <a
@@ -383,10 +360,8 @@ export default function App() {
                     target="_blank"
                     className="bg-green-900 hover:bg-green-800 px-4 py-2 rounded-md flex items-center gap-2 text-white"
                   >
-                    <FaGithub />
-                    Github
+                    <FaGithub /> Github
                   </a>
-
                   <h1
                     className="text-transparent text-4xl sm:text-5xl font-bold"
                     style={{ WebkitTextStroke: "1px #22c55e" }}
@@ -397,7 +372,6 @@ export default function App() {
               </div>
             </article>
 
-           
             <article
               data-aos="zoom-in-up"
               className="w-full rounded-lg shadow-lg overflow-hidden border border-green-500/50 bg-black"
@@ -407,14 +381,12 @@ export default function App() {
                 src={chaos}
                 alt="project"
               />
-
               <div className="flex flex-col gap-1 mt-4 px-4">
                 <h2 className="italic text-lg font-semibold text-white">
                   Chaos app
                 </h2>
                 <span className="text-gray-400">Aplikasi</span>
               </div>
-
               <div className="flex gap-4 mt-4 px-4">
                 <button className="rounded-full bg-blue-600 p-2">
                   <FaFlutter size={18} />
@@ -423,7 +395,6 @@ export default function App() {
                   <FaDartLang size={18} />
                 </button>
               </div>
-
               <div className="mt-4 p-4 border-t border-gray-700">
                 <div className="flex justify-between items-center">
                   <a
@@ -431,10 +402,8 @@ export default function App() {
                     target="_blank"
                     className="bg-green-900 hover:bg-green-800 px-4 py-2 rounded-md flex items-center gap-2 text-white"
                   >
-                    <FaGithub />
-                    Github
+                    <FaGithub /> Github
                   </a>
-
                   <h1
                     className="text-transparent text-4xl sm:text-5xl font-bold"
                     style={{ WebkitTextStroke: "1px #22c55e" }}
@@ -445,8 +414,7 @@ export default function App() {
               </div>
             </article>
 
-     
-             <article
+            <article
               data-aos="zoom-in-up"
               className="w-full rounded-lg shadow-lg overflow-hidden border border-green-500/50 bg-black"
             >
@@ -455,14 +423,12 @@ export default function App() {
                 src={gympro}
                 alt="project"
               />
-
               <div className="flex flex-col gap-1 mt-4 px-4">
                 <h2 className="italic text-lg font-semibold text-white">
                   Gympro
                 </h2>
                 <span className="text-gray-400">Aplikasi</span>
               </div>
-
               <div className="flex gap-4 mt-4 px-4">
                 <button className="rounded-full bg-blue-600 p-2">
                   <FaFlutter size={18} />
@@ -471,7 +437,6 @@ export default function App() {
                   <FaDartLang size={18} />
                 </button>
               </div>
-
               <div className="mt-4 p-4 border-t border-gray-700">
                 <div className="flex justify-between items-center">
                   <a
@@ -479,10 +444,8 @@ export default function App() {
                     target="_blank"
                     className="bg-green-900 hover:bg-green-800 px-4 py-2 rounded-md flex items-center gap-2 text-white"
                   >
-                    <FaGithub />
-                    Github
+                    <FaGithub /> Github
                   </a>
-
                   <h1
                     className="text-transparent text-4xl sm:text-5xl font-bold"
                     style={{ WebkitTextStroke: "1px #22c55e" }}
@@ -493,7 +456,7 @@ export default function App() {
               </div>
             </article>
 
-                   <article
+            <article
               data-aos="zoom-in-up"
               className="w-full rounded-lg shadow-lg overflow-hidden border border-green-500/50 bg-black"
             >
@@ -502,44 +465,41 @@ export default function App() {
                 src={rental}
                 alt="project"
               />
-
               <div className="flex flex-col gap-1 mt-4 px-4">
                 <h2 className="italic text-lg font-semibold text-white">
                   RentCycle (rental motor)
                 </h2>
                 <span className="text-gray-400">Website</span>
               </div>
-
               <div className="flex gap-4 mt-4 px-4">
                 <button className="rounded-full bg-green-600 p-2">
                   <SiExpress size={18} />
                 </button>
-                <button className="rounded-full p-2" style={{ background: "#61DBFB" }}>
+                <button
+                  className="rounded-full p-2"
+                  style={{ background: "#61DBFB" }}
+                >
                   <RiReactjsFill size={18} />
                 </button>
               </div>
-
               <div className="mt-4 p-4 border-t border-gray-700">
                 <div className="flex justify-between items-center">
-                 <div className="flex gap-1 items-center">
-                   <a
-                    href="https://github.com/ridhobillah/Backendujikelayakan"
-                    target="_blank"
-                    className="bg-green-900 hover:bg-green-800 px-4 py-2 rounded-md flex items-center gap-2 text-white"
-                  >
-                    <FaGithub />
-                    Backend
-                  </a>
+                  <div className="flex gap-1 items-center">
                     <a
-                    href="https://github.com/ridhobillah/Frontendujikel"
-                    target="_blank"
-                    className="bg-green-900 hover:bg-green-800 px-4 py-2 rounded-md flex items-center gap-2 text-white"
-                  >
-                    <FaGithub />
-                    Frontend
-                  </a>
-                 </div>
-
+                      href="https://github.com/ridhobillah/Backendujikelayakan"
+                      target="_blank"
+                      className="bg-green-900 hover:bg-green-800 px-4 py-2 rounded-md flex items-center gap-2 text-white"
+                    >
+                      <FaGithub /> Backend
+                    </a>
+                    <a
+                      href="https://github.com/ridhobillah/Frontendujikel"
+                      target="_blank"
+                      className="bg-green-900 hover:bg-green-800 px-4 py-2 rounded-md flex items-center gap-2 text-white"
+                    >
+                      <FaGithub /> Frontend
+                    </a>
+                  </div>
                   <h1
                     className="text-transparent text-4xl sm:text-5xl font-bold"
                     style={{ WebkitTextStroke: "1px #22c55e" }}
@@ -567,7 +527,6 @@ export default function App() {
             </p>
           </div>
 
-          {/* slider */}
           <div className="overflow-hidden" data-aos="zoom-in">
             <div className="flex gap-6 animate-scroll w-max">
               {[...certificates, ...certificates].map((item, index) => (
@@ -596,7 +555,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* modal */}
         {selectedImage && (
           <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center px-4">
             <div className="relative max-w-5xl w-full">
@@ -617,33 +575,40 @@ export default function App() {
         )}
       </section>
 
-      {/* custom animation */}
-      <style>{`
-        @keyframes scroll {
-          from {
-            transform: translateX(0);
-          }
-          to {
-            transform: translateX(-50%);
-          }
-        }
+      <footer class="bg-green-900 rounded-t-full">
+        <div class="mx-auto max-w-7xl py-8 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+          <div class="mt-8 md:mb-8 flex justify-center space-x-6 md:order-3  ">
+            <a
+              href="https://instagram.com/ridhobillah21"
+              target="_blank"
+              class="text-white hover:text-gray-200"
+            >
+              <FaInstagram size={25} />
+            </a>
 
-        .animate-scroll {
-          animation: scroll 15s linear infinite;
-        }
+            <a
+              href="https://wa.me/628989209979"
+              target="_blank"
+              class="text-white hover:text-gray-200"
+            >
+              <FaWhatsapp size={25} />
+            </a>
 
-        .animate-scroll:hover {
-          animation-play-state: paused;
-        }
-
-        @media (max-width: 640px) {
-          .animate-scroll {
-          animation: scroll 20s linear infinite;
-        }
-  }
-      `}</style>
-
-      <FooterAI />
+            <a
+              href="https://github.com/ridhobillah"
+              target="_blank"
+              class="text-white hover:text-gray-200"
+            >
+              <FaGithub size={25} />
+            </a>
+          </div>
+          <div class="mt-8  md:order-1 md:mt-0 ">
+            <p class="text-center text-base text-white">
+              @ 2026 Muhammad Ridho Billah
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
